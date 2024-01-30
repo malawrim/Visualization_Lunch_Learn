@@ -1,0 +1,26 @@
+# A conda environment for visualization L&L demo
+#
+# Usage:
+#   $ conda env create --file=Documents\GitHub\Visualization_Lunch_Learn\viz.yml
+#   $ conda activate viz
+# or to update - after activating call
+#   $ conda env update --file=Documents\GitHub\FUTURES_zoning_prelim\futures_zoning.yml
+# ipyvizzu cannot be installed through conda - after activating this conda environment 
+# use: pip install ipyvizzu 
+
+name: viz
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.9.5
+  - pandas
+  - notebook
+  - jupyterlab
+  - matplotlib
+  - seaborn
+  - plotnine
+  - bokeh
+  - panel
+  - jupyter_bokeh
